@@ -1,2 +1,16 @@
-This code is meant to be used with the Goodrich SWIR InGaAs camera interfacing with a National Instruments PCI Board (PCIE1427) running on Windows 7.
 ICACTI stands for Infrared Camera for Astrophysical and Cosmological Transient Interface.
+This code is meant to be used with the Goodrich SWIR InGaAs camera interfacing with a National Instruments PCI Board (PCIE1427) running on Windows 7.
+The IR_CAMERA.py is the interface with the camera.
+The IR_CAMERA_GUI.py provides a user friendly gui to interact with the camera, and calls on the functions defined in the IR_CAMERA.py code.
+Instrunctions for use:
+Run IR_CAMERA.py
+If different exposure times are desired change them in expsoure time (only multiples of 1 second should be entered)
+In the GUI click Initialize Camera
+Snap gives a single image of the camera at the given exposure time.
+Storing a background is useful for identifying sources. Click store background while the sensor (or telescope is covered).
+Having a stored background will automatically subtract the newly stored dark frame from any subsequent images to be displayed.  Any data that is saved will not be dark subtracted.
+The frame median is read out after every exposure.
+Toggling "Graphing On" will display images as they are saved, as well as a histogram; this will however drastically slow data collection rates.
+Toggling "Write to Disk" will write each individual frame to disk. For example if you set the exposure time to 5 seconds, a new frame will be saved for every 5 seconds of data collected.
+If you want to change exposure times, you will need to click "Close Camera Interface", change the exposure length, then click "initialize Camera".
+In case of failure, always try to close the program and restart it.
