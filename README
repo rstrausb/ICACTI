@@ -1,1 +1,2 @@
 This code is meant to be used with the Goodrich SWIR InGaAs camera interfacing with a National Instruments PCI Board (PCIE1427) running on Windows 7.
+ICACTI stands for Infrared Camera for Astrophysical and Cosmological Transient Interface.
