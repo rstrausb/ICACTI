@@ -3,7 +3,7 @@ This code is meant to be used with the Goodrich SWIR InGaAs camera interfacing w
 The IR_CAMERA.py is the interface with the camera.
 The IR_CAMERA_GUI.py provides a user friendly gui to interact with the camera, and calls on the functions defined in the IR_CAMERA.py code.
 Instrunctions for use:
-Run IR_CAMERA.py
+Run IR_CAMERA_GUI.py
 If different exposure times are desired change them in expsoure time (only multiples of 1 second should be entered)
 In the GUI click Initialize Camera
 Snap gives a single image of the camera at the given exposure time.
